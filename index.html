@@ -1,11 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sass</title>
-  <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sass</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- header  -->
+    <div class="header">
+      <div class="container">
+        <div class="header-inner">
+          <div class="header-wrapper">
+            <img
+              src="./img/close.png"
+              alt="close"
+              class="header-close"
+              width="20"
+              height="20"
+            />
+            <nav class="header-nav">
+              <ul class="header-list">
+                <li class="header-item">
+                  <a href="#" class="header-item-link"> Platform </a>
+                </li>
+                <li class="header-item">
+                  <a href="#" class="header-item-link"> Solutions </a>
+                </li>
+                <li class="header-item">
+                  <a href="#" class="header-item-link"> Resources </a>
+                </li>
+                <li class="header-item">
+                  <a href="#" class="header-item-link"> Pricing </a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="header-box">
+              <a href="#" class="header-login"> Login </a>
+              <button class="header-btn">
+                Sign up
+                <img
+                  src="./img/symbol.png"
+                  alt="symbol"
+                  class="header-btn-img"
+                  width="8"
+                  height="12"
+                />
+              </button>
+              <img
+                src="./img/search.png"
+                alt="search"
+                class="headaer-search-img"
+                width="20"
+                height="20"
+              />
+            </div>
+          </div>
+          <img
+            src="./img/menu.png"
+            alt="menu"
+            class="header-menu"
+            width="20"
+            height="20"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- header  -->
+    <script>
+      const menuBtn = document.querySelector(".header-menu");
+      const closeBtn = document.querySelector(".header-close");
+      const headerWrapper = document.querySelector(".header-wrapper");
+
+      menuBtn.addEventListener("click", function (evt) {
+        evt.preventDefault();
+
+        headerWrapper.classList.add("block");
+      });
+      closeBtn.addEventListener("click", function (evt) {
+        evt.preventDefault();
+
+        headerWrapper.classList.remove("block");
+      });
+    </script>
+  </body>
 </html>

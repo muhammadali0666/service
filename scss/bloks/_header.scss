@@ -1,0 +1,138 @@
+.header-inner {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 330px;
+}
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-list {
+  display: flex;
+  align-items: center;
+}
+.header-item {
+  margin-left: 20px;
+}
+.header-item:nth-child(1) {
+  margin-left: 0px;
+}
+.header-item-link {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #353532;
+}
+.header-box {
+  display: flex;
+  align-items: center;
+}
+.header-login {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #353532;
+}
+.header-btn {
+  margin-left: 20px;
+  border: none;
+  padding: 8px 25px;
+  display: flex;
+  align-items: center;
+  background: #00835a;
+  border-radius: 16px;
+  color: white;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.header-btn-img {
+  margin-left: 8px;
+}
+.headaer-search-img {
+  margin-left: 20px;
+}
+.header-menu {
+  display: none;
+}
+.header-close {
+  display: none;
+}
+
+@media (max-width: 990px) {
+  .header-inner {
+    padding-left: 130px;
+  }
+}
+
+@media (max-width: 750px) {
+  .header-inner {
+    padding-left: 0px;
+  }
+  .header-menu {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: block;
+    z-index: -1;
+  }
+  .header-close {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+  .header-wrapper {
+    width: 50%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: #00835a;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    display: none;
+  }
+  .block {
+    display: block;
+  }
+  .hidden {
+    display: none;
+  }
+  .header-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-item {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .header-item-link {
+    color: #fff;
+  }
+  .header-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .header-login {
+    color: #fff;
+  }
+}
+@media (max-width: 500px) {
+  .header-wrapper {
+    width: 70%;
+  }
+}
